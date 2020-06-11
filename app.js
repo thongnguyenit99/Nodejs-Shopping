@@ -35,6 +35,12 @@ app.get('/shopping-cart.html', (req, res) => {
 app.get('/details.html', (req, res) => {
     res.render('vwProducts/details');
 })
+app.get('/product_type.html', (req, res) => {
+    res.render('vwProducts/product_type');
+})
+app.get('/product_manu.html', (req, res) => {
+    res.render('vwProducts/product_manu');
+})
 app.use(function (req, res) {
     res.render('404');
 })

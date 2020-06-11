@@ -29,8 +29,8 @@ hr.hr-product-type {
     margin-left: 3%;
 }
 .item{
-    width: 180px;
-    height: 350px;
+    width: auto;
+    height: auto;
     border: solid 1px #F2F2F2; 
     margin: 1%;
 
@@ -39,7 +39,7 @@ hr.hr-product-type {
 .item img{
     width: 170px;
     height: 182px;
-    margin-left: 1%;
+    margin-left: 7%;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -62,6 +62,10 @@ p.item-title {
 .item-price{
     text-align: center;
     color: red;
+    height: 50px;
+}
+.detail{
+    margin-left: 15%;
 }
 .item:hover {
       -webkit-box-shadow: 2px 4px 4px 4px gray;
