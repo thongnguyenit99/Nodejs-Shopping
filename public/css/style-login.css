@@ -1,0 +1,21 @@
+.info-text {
+    margin: 10% 0%;
+
+}
+#login{
+  margin-left: 24%;
+  margin-top: 10%;
+  
+ 
+}
+#return{
+  margin-top: 10%;
+ 
+}
+
+.col-md-4.col-sm-8.col-sx-12{
+    background-color: #F2F2F2;
+     border: solid 1px rgb(218, 207, 207);
+    height:auto;
+
+}

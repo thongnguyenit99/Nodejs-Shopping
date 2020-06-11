@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{title}}</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--CSS CHO SLIDER-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-login.css">
+    <link rel="stylesheet" type="text/css" href="css/style-register.css">
+    <link rel="stylesheet" type="text/css" href="css/style-about-us.css">
+    <link rel="stylesheet" type="text/css" href="css/style-contact.css">
+    <link rel="stylesheet" type="text/css" href="css/style-error.css">
+    <link rel="stylesheet" type="text/css" href="css/style-shopping-cart.css">
+    <link rel="stylesheet" type="text/css" href="css/style-detailsProduct.css">
+
+    <script src="js/style-detailsProduct.js"></script>
+    <script src="js/style-login.js"></script>
+    <script src="js/style-register.js" type="text/javascript"></script>
+    <script src="js/style-shopping-cart.js"></script>
+
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="quick-contact">
+            <ul>
+                <li class="quick-call"><a href="tel:0345870xxx">0345.870.xxx </a></li>
+                <li class="quick-email"><a href="mailto:cskh@deploy99.vn">cskh@deploy99.vn</a></li>
+                <li class="quick-register"><a href="register.html"> <i class="fa fa-user-plus" aria-hidden="true"></i> Đăng ký</a></li>
+                <li class="quick-login"><a href="login.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Đăng nhập</a></li>
+
+            </ul>
+        </div>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 hidden-xs">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-3 col-md-3 col-xs-12">
+                                        <!-- Header Logo -->
+                                        <div class="logo">
+                                            <a title="e-commerce" href="index.html"> </a>
+                                            <div class="form-group-row">&nbsp;
+                                                <a href="/" rel="home">
+                                                    <img src="/images/log.png"
+                                                        sizes="32x32" alt="thong" />
+                                                    Deploy99</a>
+                                            </div>
+                                            &nbsp;
+                                        </div>
+                                        <!-- End Header Logo -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-12">
+                            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                                <input type="text" placeholder="Tìm kiếm tại đây...." name="search2">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- top cart -->
+
+                        <div class="col-lg-4 col-xs-4  col-md-4 top-cart">
+                            <div class="top-cart-contain">
+                                <a href="shopping-cart.html">
+                                    <span class=" cart-icon">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </span>
+                                    <span class="shoppingcart-inner hidden-xs ">
+                                        <span class="cart-title"> Giỏ hàng của bạn </span>
+                                        {{!-- <span class="cart-total">
+                                            <span id="totalItemCart">1 </span>
+                                            sản phẩm</span> --}}
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Trang Chủ </a></li>
+                <li><a>Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <ol class="type_pro"><strong class="menu">Theo loại sản phẩm</strong><br>
+                            <li><a href="">Điện thoại</a></li>
+                            <li><a href="">Tablet</a></li>
+                            <li><a href="">Laptop</a></li>
+                            <li><a href="">Phụ kiện</a></li>
+                            <li><a href="">Đồng hồ</a></li>
+                        </ol>
+
+                        <ol class="manufacturer"><strong class="menu">Theo hãng sản xuất</strong><br>
+                            <li><a href="">Apple</a></li>
+                            <li><a href="">SamSung</a></li>
+                            <li><a href="">Dell</a></li>
+                            <li><a href="">Asus</a></li>
+                            <li><a href="">Casio</a></li>
+                        </ol>
+                    </ul>
+                </li>
+                <li><a rel="nofollow" href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </header>
+<div id="content">{{{body}}}</div>
+    <!--Footer-->
+    <div id="footer" class="color-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="ft">Về chúng tôi</h4>
+                            <img class="img-line" src="images/ft_icon_line.svg">
+                            <div class="ft-content">
+                                Deploy99 là cửa hàng chuyên bán các sản phẩm về công nghệ hàng đầu Việt Nam
+                                <div class="email">
+                                    <i class="fa fa-envelope" style="color: #e60000;"></i>
+                                    <a href="#">cskh@deploy99.com</a>
+                                </div>
+                                <div class="phone">
+                                    <i class=" fa fa-phone" style="color: #e60000;"></i>
+                                    Deploy99: <a ref=" nofollow" href="tel:0345870xxx ">0345.870.xxx</a>
+                                </div>
+                                <div class=" address">
+                                    <i class="fa fa-map-marker" style="color: #e60000;"></i>
+                                    <span> Ấp 7, An Linh,Phú Giáo,Bình Dương ,Việt Nam</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="ft">Thông tin </h5>
+                        <img class="img-line" src="images/ft_icon_line.svg">
+                        <div>
+                            <ul class="ft-content">
+                                <li><a href="#"><i class="fa fa-chevron-right"></i>Trang chủ</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Sản phẩm</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Liên hệ</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Giới thiệu</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Chế độ bảo hành</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Chính sách bán hàng</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Trợ giúp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="ft">Đăng ký nhận tin</h4>
+                            <img class="img-line" src="images/ft_icon_line.svg">
+                            <div class="ft-content">
+                                Vui lòng nhập địa chỉ email để nhận bản tin khuyến mại hàng tuần của chúng tôi.
+                            </div>
+                            <form action="#" method="post">
+                                <input class="dk" type="email" name="your_email" placeholder="   Nhập email tại đây">
+                                <button class="btnRegister" type="submit">Đăng ký nhận tin </button>
+
+                            </form>
+                    </div>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- #footer -->
+    <div class="copyright">
+        <div class="container">
+            <p class="ft-ds">Thiết kế bởi <i class="fa fa-heart" style="color: #e60000;" aria-hidden="true"></i>
+                Deploy99
+            </p>
+
+
+        </div> <!-- .container -->
+        <a id="back-to-top" href="#" class="btn btn-info btn-md back-to-top" role="button"><i
+                class="fa fa-eject"></i></a>
+    </div> <!-- .copyright --> 
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!-- content -->
+<div id="content">
+    <section class="jumbotron text-center">
+        <div class="container">
+            <h2 class="jumbotron-heading">Giỏ hàng của bạn</h1>
+        </div>
+    </section>
+
+    <div class="container mb-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="table-responsive">
+                    <table class="table  table-bordered">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col" class="text-center" id="imgProduct">Hình sản phẩm</th>
+                                <th scope="col" class="text-center" id="nameProduct">Tên sản phẩm</th>
+                                <th scope="col" class="text-center" id="status">Tình trạng</th>
+                                <th scope="col" class="text-center" id="quantity">Số lượng</th>
+                                <th scope="col" class="text-center" id="price_cart">Đơn giá</th>
+                                <th class="text-center" scope="col" id="manipulation">Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center"><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                <td class="text-center">iphone 11 pro Max</td>
+                                <td class="text-center">hàng có sẵn</td>
+                                <td class="text-center" id="tdQty">
+                                    <div class="form-inline">
+                                        <input type="text" value="1" />
+                                        <i class="fa fa-edit edit-cart" onclick="myFunction()"></i>
+                                    </div>
+
+                                </td>
+                                <td class="text-center">124,90 €</td>
+                                <td class="text-center"><button class="btn btn-sm btn-danger"><i
+                                            class="fa fa-trash"></i>
+                                    </button> </td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                                <td class="text-center">nokia 1280</td>
+                                <td class="text-center">hàng còn trong kho</td>
+                                <td class="text-center" id="tdQty">
+                                    <div class="form-inline">
+                                        <input type="text" value="1" />
+                                        <i class="fa fa-edit edit-cart" onclick="myFunction()"></i>
+                                    </div>
+
+                                </td>
+                                <td class="text-center">33,90 €</td>
+                                <td class="text-center"><button class="btn btn-sm btn-danger"><i
+                                            class="fa fa-trash"></i>
+                                    </button> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" rowspan="3"></td>
+                                <td>Tổng tiền</td>
+                                <td class="text-right">255,90 €</td>
+                            </tr>
+                            <tr>
+
+                                <td>Giảm giá</td>
+                                <td class="text-right">6,90 €</td>
+                            </tr>
+                            <tr>
+
+                                <td><strong>Tiền thực tế phải trả</strong></td>
+                                <td class="text-right"><strong>346,90 €</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col mb-2">
+                <div class="row">
+                    <div class="col-sm-6  col-md-4">
+                        <button class="btn btn-block btn-primary text-uppercase"><i
+                                class="fa fa-arrow-circle-left"></i>&nbsp;Tiếp tục mua hàng</button>
+                    </div>
+                    <div class="col-sm-6 col-md-6 text-right">
+                        <button class="btn btn-md btn-block btn-success text-uppercase"><i
+                                class="fa fa-check"></i>&nbsp;Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sản phẩm theo loại</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+   
+    <!--CSS CHO đăng ký và js tự code-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-product_type.css">
+    <script src="js/style.js"></script>
+    
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div id="quick-contact">
+            <ul>
+                <li class="quick-call"><a href="tel:0345870893">0345.870.893 </a></li>
+                <li class="quick-email"><a href="mailto:cskh@deploy99.vn">cskh@deploy99.vn</a></li>
+                <li class="quick-login"><a href="login.html">Đăng nhập</a></li>
+                <li class="quick-register"><a href="#">Đăng ký</a></li>
+
+            </ul>
+        </div>
+        <div class="header-container">
+            <div class="header-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-4 hidden-xs">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-3 col-xs-12">
+                                        <!-- Header Logo -->
+                                        <div class="logo">
+                                            <a title="e-commerce" href="index.html"> </a>
+                                            <div class="form-group-row">&nbsp;
+                                                <a href="http://infothongnguyen.epizy.com/infoThongNguyen/" rel="home">
+                                                    <img src="http://localhost:8000/shopping/public/images/logo.png"
+                                                        sizes="32x32" alt="thong-bo-chon-SEO" />
+                                                    Deploy99</a>
+                                            </div>
+                                            &nbsp;
+                                        </div>
+                                        <!-- End Header Logo -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4 col-md-4 col-xs-12">
+                            <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+                                <input type="text" placeholder="Tìm kiếm tại đây...." name="search2">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                        <!-- top cart -->
+
+                        <div class="col-lg-4 col-xs-4  col-md-4 top-cart">
+                            <div class="top-cart-contain">
+                                <a href="shopping-cart.html">
+                                    <span class=" cart-icon">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </span>
+                                    <span class="shoppingcart-inner hidden-xs">
+                                        <span class="cart-title"> Giỏ hàng của bạn có</span>
+                                        <span class="cart-total">
+                                            <span id="totalItemCart">1 </span>
+                                            sản phẩm</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Trang Chủ </a></li>
+                <li><a href="product.html">Sản phẩm</a>
+                    <ul class="sub-menu">
+                        <li><a href="product_type.html">Theo loại sản phẩm</a></li>
+                        <li><a href="product_manufacture.html">Theo nhà sản xuất</a></li>
+                    </ul>
+                </li>
+                <li><a rel="nofollow" href="about-us.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên Hệ</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- content -->
+    <div id="content">
+     <div class="container">
+         <div class="row">
+       <div class="col-md-3 col-xs-10 col-sm-3">
+           <div class="Category">
+               <h5 class="title_category_name">Loại sản phẩm</h5>
+               <hr class="hr-pro_type">
+
+              <dd><a href="#">Điện thoại</a></dd>
+              <dd><a href="#">Tablet</a></dd>
+              <dd><a href="#">Laptop</a></dd>
+              <dd><a href="#">Phụ Kiện</a></dd>
+              <dd><a href="#">Đồng hồ</a></dd>
+              
+            <h5 class="title_category_price">Chọn mức giá</h5>
+            <hr class="hr-pro_type">
+            <dd><a href="#">Dưới 2 triệu</a></dd>
+            <dd><a href="#">Từ 2-4 triệu</a></dd>
+            <dd><a href="#">Từ 4-7 triệu</a></dd>
+            <dd><a href="#">Trên 7 Triệu</a></dd>
+            
+              
+
+           </div>
+       </div>
+       <div class="col-md-9 col-xs-10 col-sm-9">
+           <div class="pro_type">
+               <h5>Các sản phẩm theo loại</h5>
+                
+               <!-- 1 HÀNG THÌ CHỈ HIỂN THỊ 3 SẢN PHẨM-->
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="pro-item">
+                            <div class="pro-item-header">
+                                <a href="detailsProduct.html"><img
+                                        src="https://cdn.tgdd.vn/Products/Images/42/190324/iphone-xs-256gb-white-400x460.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="pro-item-body">
+                                <p class="pro-item-title">iphone 11 pro max 256GB 2019</p>
+                                <p class="pro-item-price">
+                                    <span>$34.55</span>
+                                </p>
+                            </div>
+                            <div class="pro-item-caption">
+                                <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                        class="fa fa-chevron-right"></i></a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="pro-item">
+                            <div class="ribbon-wrapper-pro">
+                                <div class="ribbon sale">Sale</div>
+                            </div>
+                    
+                            <div class="pro-item-header">
+                                <a href="detailsProduct.html"><img
+                                        src="https://cdn.tgdd.vn/Products/Images/42/111107/samsung-galaxy-a7-2018-blue-400x460.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="pro-item-body">
+                                <p class="pro-item-title">samsung-galaxy-a7-2018-blue</p>
+                                <p class="pro-item-price">
+                                    <span class="flash-del">$34.55</span>
+                                    <span class="flash-sale">$33.55</span>
+                                </p>
+                            </div>
+                            <div class="pro-item-caption">
+                                <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                        class="fa fa-chevron-right"></i></a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div class="pro-item">
+                            <div class="pro-item-header">
+                                <a href="detailsProduct.html"><img
+                                        src="https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-400x460.png"
+                                        alt=""></a>
+                            </div>
+                            <div class="pro-item-body">
+                                <p class="pro-item-title">iphone-11-pro-max-512gb-gold</p>
+                                <p class="pro-item-price">
+                                    <span>$34.55</span>
+                                </p>
+                            </div>
+                            <div class="pro-item-caption">
+                                <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                        class="fa fa-chevron-right"></i></a>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                    </div>
+
+           </div>
+            <!-- 1 HÀNG THÌ CHỈ HIỂN THỊ 3 SẢN PHẨM-->
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="pro-item">
+                        <div class="pro-item-header">
+                            <a href="detailsProduct.html"><img
+                                    src="https://cdn.tgdd.vn/Products/Images/42/190324/iphone-xs-256gb-white-400x460.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="pro-item-body">
+                            <p class="pro-item-title">iphone 11 pro max 256GB 2019</p>
+                            <p class="pro-item-price">
+                                <span>$34.55</span>
+                            </p>
+                        </div>
+                        <div class="pro-item-caption">
+                            <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                    class="fa fa-chevron-right"></i></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="pro-item">
+                        <div class="ribbon-wrapper-pro">
+                            <div class="ribbon sale">Sale</div>
+                        </div>
+            
+                        <div class="pro-item-header">
+                            <a href="detailsProduct.html"><img
+                                    src="https://cdn.tgdd.vn/Products/Images/42/111107/samsung-galaxy-a7-2018-blue-400x460.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="pro-item-body">
+                            <p class="pro-item-title">samsung-galaxy-a7-2018-blue</p>
+                            <p class="pro-item-price">
+                                <span class="flash-del">$34.55</span>
+                                <span class="flash-sale">$33.55</span>
+                            </p>
+                        </div>
+                        <div class="pro-item-caption">
+                            <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                    class="fa fa-chevron-right"></i></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3 col-xs-12">
+                    <div class="pro-item">
+                        <div class="pro-item-header">
+                            <a href="detailsProduct.html"><img
+                                    src="https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-400x460.png"
+                                    alt=""></a>
+                        </div>
+                        <div class="pro-item-body">
+                            <p class="pro-item-title">iphone-11-pro-max-512gb-gold</p>
+                            <p class="pro-item-price">
+                                <span>$34.55</span>
+                            </p>
+                        </div>
+                        <div class="pro-item-caption">
+                            <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                    class="fa fa-chevron-right"></i></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+       </div>
+      </div>
+      <div class="col-12">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Trở về</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript:void(0);">Kết tiếp</a></li>
+            </ul>
+
+      </div>
+     </div>
+
+    </div>
+    </div>
+    <!--Footer-->
+    <div id="footer" class="color-div">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="ft">Về chúng tôi</h4>
+                            <img class="img-line"
+                                src="https://devteam.mobi/wp-content/uploads/2019/03/ft_icon_line.svg">
+                            <div class="ft-content">
+                                Deploy99 là cửa hàng chuyên bán các sản phẩm về công nghệ hàng đầu Việt Nam
+                                <div class="email">
+                                    <i class="fa fa-envelope" style="color: #e60000;"></i>
+                                    <a href="#">cskh@deploy99.com</a>
+                                </div>
+                                <div class="phone">
+                                    <i class=" fa fa-phone" style="color: #e60000;"></i>
+                                    Deploy99: <a ref=" nofollow" href="tel:0345870893 ">0345.870.893</a>
+                                </div>
+                                <div class=" address">
+                                    <i class="fa fa-map-marker" style="color: #e60000;"></i>
+                                    <span> Ấp 7, An Linh,Phú Giáo,Bình Dương ,Việt Nam</span>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="ft">Thông tin </h5>
+                        <img class="img-line" src="https://devteam.mobi/wp-content/uploads/2019/03/ft_icon_line.svg">
+                        <div>
+                            <ul class="ft-content">
+                                <li><a href="#"><i class="fa fa-chevron-right"></i>Trang chủ</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Sản phẩm</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Liên hệ</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Giới thiệu</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Chế độ bảo hành</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Chính sách bán hàng</a></li>
+                                <li><a href="#"><i class="fa fa-chevron-right"></i> Trợ giúp</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div>
+                        <h5 class="ft">Đăng ký nhận tin</h4>
+                            <img class="img-line"
+                                src="https://devteam.mobi/wp-content/uploads/2019/03/ft_icon_line.svg">
+                            <div class="ft-content">
+                                Vui lòng nhập địa chỉ email để nhận bản tin khuyến mại hàng tuần của chúng tôi.
+                            </div>
+                            <form action="#" method="post">
+                                <input class="dk" type="email" name="your_email" placeholder="   Nhập email tại đây">
+                                <button class="btnRegister" type="submit">Đăng ký nhận tin </button>
+
+                            </form>
+                    </div>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- #footer -->
+    <div class="copyright">
+        <div class="container">
+            <p class="ft-ds">Thiết kế bởi <i class="fa fa-heart" style="color: #e60000;" aria-hidden="true"></i>
+                Deploy99
+
+                <span class="pull-right pay-options">
+                    <a href="#"><img src="http://localhost:8000/shopping/public/images/visa.png" alt="" /></a>
+                    <a href="#"><img src="http://localhost:8000/shopping/public/images/paypal.png" alt="" /></a>
+                    <a href="#"><img src="http://localhost:8000/shopping/public/images/discover.png" alt="" /></a>
+                    <a href="#"><img src="http://localhost:8000/shopping/public/images/master-card.png" alt="" /></a>
+                </span>
+            </p>
+
+
+        </div> <!-- .container -->
+    </div> <!-- .copyright -->
+    <a id="back-to-top" href="#" class="btn btn-info btn-md back-to-top" role="button"><i class="fa fa-eject"></i></a>
+
+</body>
+
+</html>

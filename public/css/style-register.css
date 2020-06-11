@@ -1,0 +1,25 @@
+.infomation-title h5{
+    color: blue;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15%;
+
+
+}
+#success_message{ display: none;}
+.captchaimg img{
+    width: 100px;
+    height: 50px;
+    
+  
+}
+.infomation-title img{
+    width: 340px;
+    height: 100px;
+    margin-left:  34% ;
+    margin-bottom: 2%;
+}
+a{
+    text-decoration:none;
+    margin-left: 5%;
+}

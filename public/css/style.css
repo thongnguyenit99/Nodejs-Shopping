@@ -1,0 +1,669 @@
+       /*header*/
+   
+       
+       * {
+            margin: 0;
+            padding: 0;
+           
+        }
+        header{
+            font-size: 17px;
+        }
+   
+        /*==Style cho quick-contact===*/
+        
+        #quick-contact ul {
+            background: #2F2D2D;
+            list-style-type: none;
+            text-align: left;
+            color: white;
+            margin-left: 0px;
+           
+        }
+        
+        #quick-contact li {
+            display: inline;
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 5px;
+            
+        }
+        
+        .quick-call a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 17px;
+            font-family:  sans-serif;
+            float: left;
+            white-space: nowrap;
+        }
+        
+        .quick-email a {
+            margin-left: 5%;
+            color: white;
+            float: left;
+            text-decoration: none;
+            font-size: 17px;
+            font-family:  sans-serif;
+        }
+        .quick-login ,.quick-register {
+    float: right;
+   
+}
+        .quick-login ,.quick-register {
+    float: right;
+   
+}
+        .quick-login a,.quick-register a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family:  sans-serif;
+}
+        .quick-login a:hover,.quick-register a:hover,.quick-call a:hover,.quick-email a:hover{
+    text-decoration: none;
+    color: orange;
+    
+}
+/*top-cart-contain*/
+.top-cart-contain{
+    margin: 8%;
+    
+}
+.top-cart-contain a{
+    text-decoration: none;
+   
+
+}
+
+        /*header-MENU*/
+        
+       .form-group-row a{
+           text-decoration: none;
+           font-size: 20px;
+           font-family:  sans-serif;
+           color: tomato;
+       }
+     .form-group-row a:hover{
+         color: blue;
+     }
+        
+        
+        
+        #menu ul {
+            background: #3287e7c7;
+            list-style-type: none;
+            text-align: left;
+            color: white;
+            margin-left: 0px;
+            justify-content: center;
+
+            
+        }
+        
+        #menu li {
+            color: white;
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            line-height: 50px;
+           
+            text-align: center;
+            font-size: 17px;
+            font-family: sans-serif;
+            margin-left: 5%; 
+           
+        }
+        
+        #menu a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            text-align:center;
+            text-anchor: middle;
+           
+          
+        }
+        
+        #menu a:hover {
+            background: rgb(39, 122, 230);
+            color: white;
+            height: 50px;
+            border-bottom: solid 3px gray;
+           
+            
+        }
+        
+       
+       
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  height: 40px;
+  margin-top: 30px;
+  
+}
+
+form.example button {
+  float: right;
+  width: 20%;
+  padding: 10px;
+  background: rgb(247, 150, 6);
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 30px;
+  
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.info-text{
+    text-align: center;
+}
+/*header-SUBMENU  
+ TẠI đây sẽ thiết kế phần css cho menu đa cấp thứ 1   
+*/
+ul.sub-menu{
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    display: none;
+    cursor: pointer;
+
+   
+    
+}
+
+ul.sub-menu li {
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    cursor: inherit;
+
+       
+
+
+    
+}
+ul.sub-menu a {
+    display: block;
+    cursor: pointer;
+    width: 130px;
+       
+
+
+  
+}
+
+ #menu li>.sub-menu {
+     width: 300px;
+     z-index: 1;
+     height: 450px;    
+    cursor: inherit;
+    background-color: teal;
+    margin-top: 0%;
+    margin-left: 9%;
+
+     
+     
+    
+ }
+
+ 
+li{
+    margin-top:1px;
+     margin-left: 10%;
+    
+
+}
+li:hover ul.sub-menu {
+    display: block;
+}
+.sub-menu a:hover  {
+font-size: 17px;
+width: 130px;
+
+
+
+}
+strong.menu {
+    text-align: center;
+    margin-left: 18%;
+    color: yellow;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.type_pro li{
+    text-align: right;
+}
+
+
+            /* Đây là phần css của phần nội dung:Content*/
+#content{
+    height:auto;
+    width: 100%px;
+    margin: 1%;
+}
+         /*SLIDE CSS CHO PHẦN NỘI DUNG*/
+#demo{
+    height: 350px;
+   
+}
+ .carousel-inner img {
+      height: 350px;
+      width: 100%;
+  }
+  .carousel-caption p ,h3{
+      color: green;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    background-color: black;
+    height: 20px;
+    width: 20px;
+}
+
+/*CSS CHO PHẦN SẢN PHẨM MỚI*/
+.newProduct{
+    height: auto;
+    margin: 3%  1%;
+   
+
+}
+
+/*CSS CHO PHẦN SẢN PHẨM BÁN CHẠY NHẤT*/
+.best-seller-products{
+    height: auto;  
+    margin: 1%;
+}
+
+hr{
+    border: solid 1px red;
+    width: 30%;
+}
+.beta-btn.primary{
+height: 50%;
+margin-left: 10%;
+}
+.beta-btn.info{
+height: 50%;
+margin-left: 25%;
+text-decoration: none;
+}
+.single-item-title,.single-item-price{
+    text-align: center;
+}
+/* ==========================================================================
+    11. BETA PRODUCTS DETAILS
+============================================================================= */
+
+.beta-products-details {
+font-size:15px;
+margin-bottom:17px
+}
+
+.beta-products-details .pull-left {
+margin-top:10px;
+
+}
+
+.beta-products-details a {
+color:#3a5c83
+}
+
+
+.beta-products-details a:hover {
+text-decoration:underline;
+
+}
+
+.beta-products-details .sort-by {
+display:inline-block;
+padding-right:10px
+}
+
+.beta-products-details .beta-select {
+font-size:13px
+}
+
+/* ==========================================================================
+    11.1 SINGLE ITEM
+============================================================================= */
+div.single-item{
+    border: solid 0.5px #F2F2F2;
+    margin: 7px;
+    background-color: white;
+}
+.single-item {
+ position:relative;
+ width: 250px;
+ height: auto;
+}
+.single-item img{
+ width: 180px;
+ height: 200px;
+ margin-left: 13%;
+ margin-top: 10%;
+}
+.single-item img:hover{
+ width: 180px;
+ height: 200px;
+ margin-left: 13%;
+ margin-top: 10%;
+
+}
+.single-item:hover {
+      -webkit-box-shadow: 2px 4px 4px 4px gray;
+    
+}
+
+.single-item-header {
+margin-bottom:20px
+}
+
+.single-item-title {
+font-size:16px;
+margin-bottom:5px;
+font-family: sans-serif	;
+height: 50px;
+
+}
+.single-item-price {
+font-size:15px;
+color:red;
+
+}
+.single-item:hover a.beta-btn.primary{color: green;}
+.single-item:hover a.beta-btn.info{color: green;}
+.single-item-caption{
+    margin-bottom: 15%;
+    margin-left: -2%;
+}
+
+
+/*tới phần thêm vào giỏ hàng*/
+
+
+.add-to-cart i {
+font-size:22px;
+color:#fff;
+line-height:35px
+}
+
+.flash-del {
+text-decoration:line-through;
+margin-right:10px
+}
+
+.flash-sale {
+color:#f90
+}
+
+/* ==========================================================================
+    11.2 RIBBON
+============================================================================= */
+
+.ribbon-wrapper {
+width:55px;
+height:55px;
+overflow:hidden;
+position:absolute;
+top:-2px;
+left:200px
+}
+
+.ribbon {
+color:#fff;
+text-align:center;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+position:relative;
+padding:4px 0;
+left:1px;
+top:4px;
+width:80px;
+text-transform:uppercase;
+background-color:#3a5c83
+}
+
+.ribbon:before,.ribbon:after {
+content:"";
+border-top:3px solid #6e8900;
+border-left:3px solid transparent;
+border-right:3px solid transparent;
+position:absolute;
+bottom:-3px
+}
+
+.ribbon:before {
+left:0
+}
+
+.ribbon:after {
+right:0
+}
+
+.ribbon.sale {
+background-color:#f90;
+margin-left:65%;
+margin-top:2%;
+
+
+}
+
+/* ==========================================================================
+    12. PRICE FILTER
+============================================================================= */
+
+.price-filter {
+margin-top:30px
+}
+
+#price-filter-range {
+margin-bottom:20px;
+border:none;
+background:#e7e7e7;
+height:3px;
+position:relative
+}
+
+#price-filter-range .ui-slider-range {
+background:#c1c1c1;
+position:absolute;
+display:block;
+height:inherit
+}
+
+#price-filter-range .ui-slider-handle {
+background:#3a5c83;
+width:11px;
+height:11px;
+border-radius:50%;
+border:none;
+display:block;
+top:-4px;
+position:absolute
+}
+
+.tp-banner-container {
+position:relative
+}
+/* ==========================================================================
+    PHẦN CSS MÀU CAM
+============================================================================= */
+.main-menu ul li.active> a{background:#ebb74c; }
+.sub-menu li.active, .children li.active{background:#ebb74c;}
+.main-menu ul.l-inline> li> a:hover{background: #ebb74c!important;}
+.sub-menu li:hover, .children li:hover{background: #ebb74c!important;}
+.add-to-cart{background:orange;}
+.ribbon{background:#ebb74c;}
+.beta-tags a:hover{background:#ebb74c;}
+#price-filter-range .ui-slider-handle{background:#ebb74c;}
+.beta-btn.primary:hover{
+    text-decoration: none;
+    height: 50px;
+}
+.aside .widget-title{border-left: 3px solid #ebb74c;}
+/*hover sản phẩm*/
+
+
+
+/* 3.CSS CHO PHẦN FOOTER*/
+#footer {
+background:#172431;
+color:#7b8fa3;
+padding:40px 0 50px;
+margin-top: 2%;
+
+
+}
+.copyright{
+    background-color: black;
+    padding:30px 0 40px;
+    color: white;
+    height: 50px;
+
+}
+
+#footer a {
+color:#7b8fa3;
+text-decoration: none;
+}
+#footer.color-div a {color:gray}
+#footer a:hover {
+color:#f90
+}
+.color-div p{color:gray;}
+
+#footer h4.widget-title {
+color:#adbac8;
+margin-bottom:22px
+}
+#footer.color-div h4.widget-title{color:gray;}
+
+#footer ul {
+list-style:none
+}
+
+#footer ul li {
+margin-bottom:10px
+}
+#footer ul li i {
+color:#f90;
+margin-right:5px;
+font-size:10px
+}
+
+#footer input {
+background:white;
+border:1px solid #4e5862;
+margin-bottom:10px;
+width: 90%;
+height: 40px;
+margin-left: 10px;
+
+}
+
+#footer button {
+background:none;
+border:1px solid #4e5862;
+color:#adbac8;
+height:37px;
+padding:0 15px
+}
+#footer.color-div button {
+    border:1px solid gray;
+    background-color: blue;
+    color: white;
+    float: right;
+    margin-right: 20%;
+}
+
+#footer button:hover {
+color:white;
+background-color: red;;
+-webkit-transition:all .2s ease-in-out;
+-moz-transition:all .2s ease-in-out;
+-o-transition:all .2s ease-in-out;
+-ms-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+
+}
+
+#footer button i {
+margin-left:5px;
+font-size:10px;
+color:#f90
+}
+.ft{
+    color: white;
+    margin-left: 5%;
+}
+.ft-content{
+    margin: 5%;
+     color: rgb(202, 193, 193);
+     font-size: 17px;
+}
+.ft-ds{
+    text-align: center;
+    font-size: 18px;
+}
+.img-line{
+    height:2% ;
+   
+}
+
+
+h1,h2,h3,h4{
+    font-weight: bold;
+}
+.email,.phone,.address{
+    margin-top: 5%;
+}
+.header-bottom{
+    background-color: forestgreen;
+    font-size: 22px;
+    border-top:1px solid #e3e3e3;
+    border-bottom:1px solid #e3e3e3;
+
+}
+.main-menu>ul.l-inline> li> a:hover{
+  color: #fff;
+  font-size: 17px;
+  background-color: #66CC99;
+  height: 80px;
+
+}
+/*CSS CHO PHẦN THẺ A  .back-to-top*/
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+.fa-eject{
+    font-size:20px;
+    
+
+}

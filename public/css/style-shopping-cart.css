@@ -1,0 +1,13 @@
+.form-inline input {
+    width: 35px;
+    text-align: center;
+    height: 30px;
+    margin: 5%;
+}
+.fa-edit{
+    margin-left: 2%;
+  
+}
+#tdQty{
+    width: 100px;
+}
