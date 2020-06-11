@@ -313,6 +313,9 @@ text-decoration: none;
 .single-item-title,.single-item-price{
     text-align: center;
 }
+.new{
+    margin-left: 25%;
+}
 /* ==========================================================================
     11. BETA PRODUCTS DETAILS
 ============================================================================= */
@@ -351,12 +354,12 @@ font-size:13px
 ============================================================================= */
 div.single-item{
     border: solid 0.5px #F2F2F2;
-    margin: 7px;
+    margin: 1% -2%;
     background-color: white;
 }
 .single-item {
  position:relative;
- width: 250px;
+ width: auto;
  height: auto;
 }
 .single-item img{

@@ -1,1 +1,123 @@
 <div><h1>thonggggg nguyennn</h1></div>
+<div id="content">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.tgdd.vn/2019/11/banner/800-300-800x300-(9).png" alt="Los Angeles">
+                <div class="carousel-caption">
+                    <h3>khuyến mãi tháng 11</h3>
+                    <p>Tặng bạn iphone 11 pro Max khi mua nokia 1080</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.tgdd.vn/2019/11/banner/800-300-800x300-(15).png" alt="Chicago" width="1100"
+                    height="200">
+                <div class="carousel-caption">
+                    <h3>Sangsum A50S</h3>
+                    <p>Cùng Đông Nhi nhen!</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.tgdd.vn/2019/11/banner/800-300-800x300-(10).png" alt="New York" width="1100"
+                    height="200">
+                <div class="carousel-caption">
+                    <h3>Điện thoại Redmi note 8 hot nhất tháng 11</h3>
+                    <p>Trả góp 0%, tha hồ mua sắm</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+        <!-- 10 Sản phẩm mới-->
+        <div class="newProduct">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="beta-products-list">
+                        <h4>Sản phẩm mới</h4>
+                        <hr>
+                        <div class="beta-products-Chi tiết sản phẩm">
+                            <p class="pull-left">có hơn 120 sản phẩm</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="row">
+                            {{#each this.newlist}}
+                            <div class="col-sm-4">
+                                <div class="single-item mb-4">
+                                    <div class="single-item-header">
+                                        <a href="detailsProduct.html"><img
+                                        src="/product/{{HinhURL}}"
+                                                alt="{{MaSanPham}}:{{TenSanPham}}" title="{{MaSanPham}}:{{TenSanPham}}" style="width:250px;height:300px""> </a>
+                                    </div>
+                                    <div class="single-item-body">
+                                        <p class="single-item-title">{{TenSanPham}}</p>
+                                        <p class="single-item-price">
+                                            <span>{{GiaSanPham}} vnđ</span>
+                                        </p>
+                                    </div>
+                                    <div class="new mb-5">
+        
+                                        <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                                class="fa fa-chevron-right"></i></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 10 Sản bán chạy-->
+        <div class="best-seller-products">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="beta-products-list">
+                        <h4>Sản phẩm bán chạy nhất</h4>
+                        <hr>
+                        <div class="beta-products-Chi tiết sản phẩm">
+                            
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="row">
+                            {{#each this.bestlist}}
+                            <div class="col-sm-4">
+                                <div class="single-item mb-4">
+                                    <div class="single-item-header">
+                                        <a href="detailsProduct.html"><img src="/product/{{HinhURL}}"
+                                                alt="{{MaSanPham}}:{{TenSanPham}}" title="{{MaSanPham}}:{{TenSanPham}}"
+                                                style="width:250px;height:300px""> </a>
+                                            </div>
+                                            <div class=" single-item-body">
+                                            <p class="single-item-title">{{TenSanPham}}</p>
+                                            <p class="single-item-price">
+                                                <span>{{GiaSanPham}} vnđ</span>
+                                            </p>
+                                    </div>
+                                    <div class="new mb-5">
+        
+                                        <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm <i
+                                                class="fa fa-chevron-right"></i></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+</div>

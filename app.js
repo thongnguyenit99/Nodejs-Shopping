@@ -12,9 +12,10 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs');
 app.use(express.static('./public/'));
 
-app.get('/', (req, res) => {
-    res.render('home');
-})
+// app.get('/', (req, res) => {
+//     res.render('home');
+// })
+app.use('/', require('./routers/product.router'));
 app.get('/index.html', (req, res) => {
     res.render('home');
 })

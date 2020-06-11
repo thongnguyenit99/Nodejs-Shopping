@@ -15,12 +15,12 @@ module.exports = function (app) {
     const rows = await categoryModel.proType_all();
     res.locals.lcCategorie = rows;
     next();
-    console.log(rows);
+   // console.log(rows);
   })
   app.use(async function (req, res, next) {
     const rows1 = await categoryModel.proManu_all();
     res.locals.lcCategories = rows1;
     next();
-    console.log(rows1);
+    //console.log(rows1);
   })
 }
