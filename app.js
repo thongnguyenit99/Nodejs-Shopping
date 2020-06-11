@@ -41,6 +41,9 @@ app.get('/product_type.html', (req, res) => {
 app.get('/product_manu.html', (req, res) => {
     res.render('vwProducts/product_manu');
 })
+app.get('/user.html', (req, res) => {
+    res.render('vwAccount/users/index');
+})
 app.use(function (req, res) {
     res.render('404');
 })
