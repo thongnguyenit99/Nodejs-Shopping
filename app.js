@@ -3,6 +3,8 @@ const app = express();
 const port = 3000;
 const exphbs = require('express-handlebars');
 
+require('./middlewares/locals.mdw')(app);
+
 app.use(express.urlencoded({ extended: true }));
 app.engine('hbs', exphbs({
     defaultLayout: 'main.hbs'

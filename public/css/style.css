@@ -216,13 +216,14 @@ ul.sub-menu a {
 }
 
  #menu li>.sub-menu {
-     width: 300px;
+     width: 320px;
      z-index: 1;
-     height: 450px;    
+     height: auto;    
     cursor: inherit;
     background-color: teal;
-    margin-top: 0%;
+    margin-top: 12%;
     margin-left: 9%;
+    margin-bottom: 5%;
 
      
      

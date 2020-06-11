@@ -110,19 +110,14 @@
                 <li><a>Sản phẩm</a>
                     <ul class="sub-menu">
                         <ol class="type_pro"><strong class="menu">Theo loại sản phẩm</strong><br>
-                            <li><a href="">Điện thoại</a></li>
-                            <li><a href="">Tablet</a></li>
-                            <li><a href="">Laptop</a></li>
-                            <li><a href="">Phụ kiện</a></li>
-                            <li><a href="">Đồng hồ</a></li>
+                        {{#each this.lcCategorie}}
+                            <li><a href="">{{TenLoaiSanPham}}</a></li>
+                        {{/each}}
                         </ol>
-
                         <ol class="manufacturer"><strong class="menu">Theo hãng sản xuất</strong><br>
-                            <li><a href="">Apple</a></li>
-                            <li><a href="">SamSung</a></li>
-                            <li><a href="">Dell</a></li>
-                            <li><a href="">Asus</a></li>
-                            <li><a href="">Casio</a></li>
+                            {{#each this.lcCategories}}
+                            <li><a href="">{{ TenHangSanXuat }}</a></li>
+                            {{/each}}
                         </ol>
                     </ul>
                 </li>
