@@ -10,5 +10,13 @@ module.exports = {
     },
     BestSeller:function() {
         return db.load(`select * from ${TABLE_Product}  order by SoLuongBan DESC limit 10`); 
-   }
+    }
+    ,
+    sameProduct: (id) => {
+        return db.load(`select * from ${TABLE_Product} WHERE MaLoaiSanPham=${id} order by rand() limit 5`); 
+    },
+    detailById: (id) => {
+        return db.load(`select * from ${TABLE_Product} WHERE MaSanPham=${id} `);
+    }
+    
 }

@@ -12,41 +12,11 @@ app.engine('hbs', exphbs({
 app.set('view engine', 'hbs');
 app.use(express.static('./public/'));
 
-// app.get('/', (req, res) => {
-//     res.render('home');
-// })
-app.use('/', require('./routers/product.router'));
-app.get('/index.html', (req, res) => {
-    res.render('home');
-})
-app.get('/about.html', (req, res) => {
-    res.render('about');
-})
-app.get('/contact.html', (req, res) => {
-    res.render('contact');
-})
+app.use('/', require('./routers/home.route'));
+app.use('/tai-khoan', require('./routers/account.route'));
+//app.use('/danh-muc', require('./routers/home.route'));
+app.use('/san-pham', require('./routers/product.route'));
 
-app.get('/login.html', (req, res) => {
-    res.render('vwAccount/login');
-})
-app.get('/register.html', (req, res) => {
-    res.render('vwAccount/register', { layout: false });
-})
-app.get('/shopping-cart.html', (req, res) => {
-    res.render('vwProducts/shopping-cart');
-})
-app.get('/details.html', (req, res) => {
-    res.render('vwProducts/details');
-})
-app.get('/product_type.html', (req, res) => {
-    res.render('vwProducts/product_type');
-})
-app.get('/product_manu.html', (req, res) => {
-    res.render('vwProducts/product_manu');
-})
-app.get('/user.html', (req, res) => {
-    res.render('vwAccount/users/index');
-})
 app.use(function (req, res) {
     res.render('404');
 })

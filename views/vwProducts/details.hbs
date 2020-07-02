@@ -2,94 +2,61 @@
     <div class="main-container col1-layout">
         <div class="container">
             <div class="row">
-                <div class="col-sm-5">
-                    <div class="details-item">
-                        <div class="ribbon-container">
-                            <div class="ribbon sale">Sale</div>
-                        </div>
-
-                        <div class="details-item-header">
-                            <img src="https://cdn.tgdd.vn/Products/Images/42/210653/iphone-11-pro-max-256gb-green-400x460.png"
-                                alt="">
-                        </div>
-                        <div class="details-item-body">
-                            <br>
-                            <p class="single-item-title">samsung-galaxy-a7-2018-blue</p>
-                            <p class="single-item-price">
-                                <span class="flash-del">$34.55</span>
-                                <span class="flash-sale">$33.55</span>
-                            </p>
+                {{#each this.details}}
+                    <div class="col-sm-6">
+                        <h4 class="mt-5">Hình sản phẩm</h4>
+                        <div class="details-item">
+                           
+                            <div class="details-item-header mt-5">
+                                <img src="/product/{{HinhURL}}" title="{{TenSanPham}}" alt="{{TenSanPham}}">
+                            </div>
+                            <div class="details-item-body">
+                                <br>
+                                <strong class="single-item-title text-success"><p>{{TenSanPham}}</p> </strong>
+                                <p class="single-item-price">
+                                    <span class="flash-sale">{{GiaSanPham}} vnđ</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-7 col-sx-7">
-                    <div class="short-description">
-                        <h4>Chi tiết sản phẩm</h4>
-                        <div class="info-product-details">
-                            <ul>
-                                <li>M&agrave;n h&igrave;nh:<a target="_blank"
-                                        href="https://www.thegioididong.com/hoi-dap/man-hinh-oled-la-gi-905762">OLED</a>,
-                                    5.8&quot;, Super Retina
-                                </li>
-                                <li>Hệ điều h&agrave;nh:<a target="_blank"
-                                        href="https://www.thegioididong.com/hoi-dap/ios-11-co-gi-moi-1021442">iOS
-                                        11</a>
-                                </li>
-                                <li>Camera sau:&nbsp;2 camera 12 MP
-                                </li>
-                                <li>Camera trước:&nbsp;7 MP
-                                </li>
-                                <li>CPU:<a target="_blank"
-                                        href="https://www.thegioididong.com/tin-tuc/chi-tiet-a11-bionic-chip-co-nhieu-thanh-phan-apple-tu-trong-nhat-tu-truoc-den-nay-1021653">Apple
-                                        A11 Bionic 6 nh&acirc;n</a>
-                                </li>
-                                <li>RAM:&nbsp;3GB
-                                </li>
-                                <li>Bộ nhớ trong:&nbsp;64 GB
-                                </li>
-                                <li>Thẻ SIM:<a target="_blank"
-                                        href="https://www.thegioididong.com/tin-tuc/tim-hieu-cac-loai-sim-thong-dung-sim-thuong-micro--590216#nanosim">1
-                                        Nano SIM</a>,&nbsp;<a target="_blank"
-                                        href="https://www.thegioididong.com/hoi-dap/4g-la-gi-731757">Hỗ trợ
-                                        4G</a>
-                                </li>
-                                <li>Dung lượng pin:&nbsp;2716 mAh,&nbsp;<a target="_blank"
-                                        href="https://www.thegioididong.com/hoi-dap/cong-nghe-sac-nhanh-tren-smartphone-755549">c&oacute;
-                                        sạc nhanh</a>
-                                </li>
-                                <li>Xuất xứ:&nbsp;Mỹ</li>
-                                <li>Nhà sản xuất:&nbsp;Apple</li>
-                                <li>Số lượt bán:&nbsp;1000 sản phẩm</li>
-                                <li>Số lượt xem:&nbsp;2000 sản phẩm</li>
-                            </ul>
+                    <div class="col-md-6 col-sx-6">
+                        <div class="short-description">
+                            <h4 class="mb-4 mt-5">Chi tiết sản phẩm</h4>
+                            <div> <strong>Mô tả: </strong>
+                                 {{{MoTa}}}</div>
+                            <div><strong>Xuất xứ: </strong>{{XuatXu}}</div>
+                            <div><strong>Hãng sản xuất: </strong>{{NhaSanXuat}}</div>
+                            <div><strong>Số lược xem: </strong>{{SoLuongXem}}</div>
+                            <div><strong>Số lược bán: </strong>{{SoLuongBan}}</div>
+                            <div><strong>Ngày nhập: </strong>{{ format_DOB NgayNhap}}</div>
+                        </div>
+                        
+                        <hr class="hr">
+                        <div class="col-8">
+                            <div class="product-variation">
+                                <form action="/gio-hang" method="get">
+                    
+                                    <label for="qty">Nhập số lượng: </label>
+                                    <div class="form-group-row">
+                                        <input type="text" class="qty" title="Qty" value="1" maxlength="12" id="qty" name="qty">
+                                        <button class="btn btn-outline-warning" type="button"
+                                            onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) && qty>1) result.value--;return false;"><i
+                                                class="fa fa-minus">&nbsp;</i></button>
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;"><i
+                                                class="fa fa-plus">&nbsp;</i></button>
+                                        <button class="btn btn-outline-success" title="Add to Cart" type="submit" data-id="105">
+                    
+                                            <i class="fa fa-shopping-cart"></i> Thêm vào giở hàng
+                                        </button>
+                                    </div>
+                    
+                                </form>
+                            </div>
                         </div>
                     </div>
-                    <hr class="hr">
-                    <div class="col-8">
-                        <div class="product-variation">
-                            <form action="shopping-cart.html" method="post">
-
-                                <label for="qty">Nhập số lượng: </label>
-                                <div class="form-group-row">
-                                    <input type="text" class="qty" title="Qty" value="1" maxlength="12" id="qty"
-                                        name="qty">
-                                    <button class="btn btn-outline-warning" type="button"
-                                        onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty ) && qty>1) result.value--;return false;"><i
-                                            class="fa fa-minus">&nbsp;</i></button>
-                                    <button class="btn btn-outline-secondary" type="button"
-                                        onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;"><i
-                                            class="fa fa-plus">&nbsp;</i></button>
-                                    <button class="btn btn-outline-success" title="Add to Cart" type="submit"
-                                        data-id="105">
-
-                                        <i class="fa fa-shopping-cart"></i> Thêm vào giở hàng
-                                    </button>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                {{/each}}
+               
             </div>
         </div>
     </div>
@@ -141,108 +108,32 @@
                     <hr class="hr-product-type">
                     <h4>Sản phẩm cùng loại</h4>
                     <hr>
-                    <div class="beta-products-Chi tiết sản phẩm">
-                        <p class="pull-left">có hơn 50 sản phẩm</p>
-                        <div class="clearfix"></div>
-                    </div>
+                   
                     <!--5 sản phẩm -->
                     <div class="row">
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item-header">
-                                    <a href="detailsProduct.html"><img
-                                            src="https://cdn.tgdd.vn/Products/Images/42/190324/iphone-xs-256gb-white-400x460.png"
-                                            alt=""></a>
-                                </div>
-                                <div class="single-item-body">
-                                    <p class="item-title">iphone 11 pro max</p>
-                                    <p class="item-price">
-                                        <span>$34.55</span>
-                                    </p>
-                                </div>
-                                <div class="single-item-caption detail detail">
-
-                                    <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item-header">
-                                    <a href="detailsProduct.html"><img
-                                            src="https://cdn.tgdd.vn/Products/Images/42/78124/iphone-7-plus-black-600x600.jpg" alt=""></a>
-                                </div>
-                                <div class="single-item-body">
-                                    <p class="item-title">iphone-7-plus-black</p>
-                                    <p class="item-price">
-                                        <span>$34.55</span>
-                                    </p>
-                                </div>
-                                <div class="single-item-caption detail">
-                                    <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm </a>
-                                    <div class="clearfix"></div>
+                        {{#each sameProduct}}
+                            <div class="col-sm-3">
+                                <div class="item">
+                                    <div class="item-header">
+                                        <a href="/san-pham/chi-tiet/{{MaLoaiSanPham}}/{{MaSanPham}}"><img
+                                                src="/product/{{HinhURL}}" alt=""></a>
+                                    </div>
+                                    <div class="single-item-body">
+                                        <p class="item-title">{{TenSanPham}}</p>
+                                        <p class="item-price">
+                                            <span>{{GiaSanPham}} vnđ</span>
+                                        </p>
+                                    </div>
+                                    <div class="single-item-caption detail detail">
+                            
+                                        <a class="beta-btn primary" href="/san-pham/chi-tiet/{{MaLoaiSanPham}}/{{MaSanPham}}">Chi tiết sản phẩm </a>
+                                        <div class="clearfix"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item-header">
-                                    <a href="detailsProduct.html"><img
-                                            src="https://cdn.tgdd.vn/Products/Images/42/210654/iphone-11-pro-max-512gb-gold-400x460.png"
-                                            alt=""></a>
-                                </div>
-                                <div class="single-item-body">
-                                    <p class="item-title">iphone-11-pro-max-512gb-gold</p>
-                                    <p class="item-price">
-                                        <span>$34.55</span>
-                                    </p>
-                                </div>
-                                <div class="single-item-caption detail detail">
-                                    <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item-header">
-                                    <a href="detailsProduct.html"><img
-                                            src="https://cdn.tgdd.vn/Products/Images/42/114110/iphone-8-plus-hh-600x600.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="single-item-body">
-                                    <p class="item-title">iphone-8-plus-2019</p>
-                                    <p class="item-price">
-                                        <span>$34.55</span>
-                                    </p>
-                                </div>
-                                <div class="single-item-caption detail">
-                                    <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="item">
-                                <div class="item-header">
-                                    <a href="detailsProduct.html"><img
-                                            src="https://cdn.tgdd.vn/Products/Images/42/78124/iphone-7-plus-black-600x600.jpg"
-                                            alt=""></a>
-                                </div>
-                                <div class="single-item-body">
-                                    <p class="item-title">iphone-7-plus-black</p>
-                                    <p class="item-price">
-                                        <span>$34.55</span>
-                                    </p>
-                                </div>
-                                <div class="single-item-caption detail">
-                                    <a class="beta-btn primary" href="detailsProduct.html">Chi tiết sản phẩm </a>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                        </div>
+                        {{/each}}
+                        
+                       
 
                     </div>
                 </div>
